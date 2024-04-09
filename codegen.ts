@@ -19,9 +19,13 @@ const config: CodegenConfig = {
   documents: ["./lib/**/*.graphql"],
   ignoreNoDocuments: false,
   generates: {
-    './lib/shopify/__generated__/graphql.ts': {
-      plugins: ['typescript', 'typescript-operations', 'typescript-generic-sdk']
-    }
+    "./lib/shopify/__generated__/graphql.ts": {
+      plugins: [
+        "typescript",
+        "typescript-operations",
+        "typescript-generic-sdk",
+      ],
+    },
   },
 };
 

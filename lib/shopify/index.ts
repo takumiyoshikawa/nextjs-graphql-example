@@ -1,7 +1,8 @@
 import { print } from "graphql";
 import { getSdk, Requester } from "./__generated__/graphql";
 
-const endpoint = `https://${process.env.SHOPIFY_STORE_DOMAIN}/api/2024-04/graphql.json` as string;
+const endpoint =
+  `https://${process.env.SHOPIFY_STORE_DOMAIN}/api/2024-04/graphql.json` as string;
 const token = process.env.SHOPIFY_STOREFRONT_ACCESS_TOKEN as string;
 
 interface RequestOptions {
@@ -13,7 +14,7 @@ interface RequestOptions {
 const customShopifyRequester: Requester<RequestOptions> = async (
   doc,
   variables,
-  options?
+  options?,
 ) => {
   const headers = {
     "Content-Type": "application/json",
@@ -39,7 +40,7 @@ const customShopifyRequester: Requester<RequestOptions> = async (
 
     if (!response.ok) {
       throw new Error(
-        `GraphQL Error: ${response.status} ${response.statusText}`
+        `GraphQL Error: ${response.status} ${response.statusText}`,
       );
     }
     const data = (await response.json()).data;
