@@ -1,0 +1,7 @@
+query getProduct($handle: String!) {
+  product(handle: $handle) {
+    id
+		title
+		description
+  }
+}
