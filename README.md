@@ -1,6 +1,6 @@
 # Motivation
 
-- This repository is motivated by [vercel commerce repository](https://github.com/vercel/commerce) and [this issue](https://github.com/apollographql/apollo-client/issues/10344). In this repo, I represent how to fetch data from a GraphQL API in RSC with typed queries, data cache and request memoization.
+- This repository is motivated by [vercel commerce repository](https://github.com/vercel/commerce) and [this issue](https://github.com/vercel/next.js/issues/49438). In this repo, I represent how to fetch data from a GraphQL API in RSC with typed queries, data cache and request memoization.
 
 # How to use
 
