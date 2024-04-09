@@ -18,8 +18,7 @@ const customShopifyRequester: Requester<RequestOptions> = async (
 ) => {
   const headers = {
     "Content-Type": "application/json",
-    "X-Shopify-Storefront-Access-Token": process.env
-      .SHOPIFY_STOREFRONT_ACCESS_TOKEN as string,
+    "X-Shopify-Storefront-Access-Token": token,
     ...options?.headers,
   };
   const revalidate = options?.revalidate ?? 0;
